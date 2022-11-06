@@ -1,0 +1,45 @@
+class info 
+#class method
+
+
+
+def self .name  	
+
+   "my mane is mohammed "
+
+end 
+
+
+#instance methode 
+
+
+
+def car
+
+  "my car is gt "
+
+
+end 
+
+
+when i want to call a class method  like:
+
+info.name   =>  "my mane is mohammed "
+
+
+
+so if i want to call a instance  method i shoud use  a object like:
+
+i=info.new 
+
+i.car =>  "my car is gt "
+or 
+
+info.new.car  =>  "my car is gt "
+
+
+thats mean 
+
+class method : can access .class name 
+
+instance methode : can access by object 

@@ -1,11 +1,15 @@
 class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
 
-  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
-  validates :username, length: {minimum: 3}, allow_blank: false
-  validates :name, presence: true, uniqueness: { case_sensitive: false }
-
+#   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+#  validates :username, length: {minimum: 3}, allow_blank: false
+#  validates :name, presence: true, uniqueness: { case_sensitive: false }
+    validates :agent_id, presence: true
     has_one :job
-  before_validation :genrate_id
+  before_validation :genrate_id 
 
   private
 

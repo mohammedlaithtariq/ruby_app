@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1
+  transaction_time: 2022-11-15 22:24:20
+  payer_id: one
+  payee_id: one
+
+two:
+  amount: 1
+  transaction_time: 2022-11-15 22:24:20
+  payer_id: two
+  payee_id: two
